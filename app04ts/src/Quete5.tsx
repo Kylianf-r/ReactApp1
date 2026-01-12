@@ -1,11 +1,6 @@
 import './App.css';
 import psg from './data/data';
-
-type PlayerCardProps = {
-  name: string;
-  number: number;
-  position: string;
-};
+import PlayerCard from './components/PlayerCardProps';
 
 
 export default function Quete5()  {
@@ -14,10 +9,17 @@ export default function Quete5()  {
     return (
         <>
             <h1>
-                Quête 5 et Bonus : Player List : Player Card
+                Quête 5 : Player List : Player Card
             </h1>
             <h1>{team}</h1>
-            <p>Nombre de joueurs : {players.length}</p>
+            {players.map((players) => (
+                <PlayerCard
+                key={players.number}
+                name={players.name}
+                number={players.number}
+                position={players.position}
+                ></PlayerCard>
+            ))}
         </>
     )
 }

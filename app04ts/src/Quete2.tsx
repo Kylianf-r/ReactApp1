@@ -8,7 +8,7 @@ export default function Quete2()  {
     return (
         <>
             <h1>
-                Quête 2 et Bonus : Player List
+                Quête 2 : Player List
             </h1>
             <h1>{team}</h1>
             {players.map((players) => (

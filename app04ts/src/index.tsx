@@ -16,11 +16,11 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ExBouton />
-    {/* <Quete1 />
+    <Quete1 />
     <Quete2 />
     <Quete3 />
     <Quete4 />
-    <Quete5 /> */}
+    <Quete5 />
   </React.StrictMode>
 );
 
